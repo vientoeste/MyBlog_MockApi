@@ -1,0 +1,14 @@
+{
+  "name": "prism",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "prism mock -h 0.0.0.0 -p 3001 swagger.yaml"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@stoplight/prism-cli": "^4.12.0"
+  }
+}
