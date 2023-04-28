@@ -3,12 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "prism mock -h 0.0.0.0 -p 3001 swagger.yaml"
+    "docs": "node index",
+    "prism": "prism mock -h 0.0.0.0 -p 3001 swagger.yaml && node index"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@stoplight/prism-cli": "^4.12.0"
+    "@stoplight/prism-cli": "^4.12.0",
+    "express": "^4.18.2",
+    "swagger-ui-express": "^4.6.2",
+    "yamljs": "^0.3.0"
   }
 }
